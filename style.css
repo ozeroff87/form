@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Gilroy";
+  src: url("/Практика/fonts/transfonter.org-20251009-090052/Gilroy-Regular.woff2") format("woff2"), url("/Практика/fonts/transfonter.org-20251009-090052/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+.form-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.form {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+}
+.form__label {
+  flex: 0 0 42.15%;
+  background-color: #070E38;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  justify-content: space-between;
+  padding: 70px 99px 70px 112px;
+}
+.form__label-description {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.form__label-description h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.form__label-description ul {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  justify-content: space-between;
+  line-height: 1.1;
+}
+.form__label-description ul li {
+  position: relative;
+  padding-left: 31px;
+}
+.form__label-description ul li::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_2667)'%3E%3Cpath d='M16.5 8.31002V9.00002C16.4991 10.6173 15.9754 12.191 15.007 13.4864C14.0386 14.7818 12.6775 15.7294 11.1265 16.1879C9.57557 16.6465 7.91794 16.5914 6.40085 16.031C4.88376 15.4705 3.58849 14.4346 2.70822 13.0778C1.82795 11.721 1.40984 10.1161 1.51626 8.50226C1.62267 6.88844 2.24791 5.35227 3.29871 4.12283C4.34951 2.89338 5.76959 2.03656 7.34714 1.68013C8.92469 1.3237 10.5752 1.48677 12.0525 2.14502' stroke='%23B5B7C3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.5 3L9 10.5075L6.75 8.2575' stroke='%23B5B7C3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_2667'%3E%3Crect width='18' height='18' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.form__registration {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 120px 20px 70px;
+}
+.form__registration form {
+  max-width: 408px;
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+}
+.form__registration h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1;
+  color: #070E38;
+  margin-bottom: 32px;
+}
+.form__input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  color: #515674;
+}
+.form__input-container input {
+  border: 1px solid #e8e8e8;
+  border-radius: 68px;
+  padding: 14.5px 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+.form__input-container input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Gilroy", sans-serif;
+  color: #20264c;
+}
+.form__input-container input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Gilroy", sans-serif;
+  color: #20264c;
+}
+.form__input-container label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+}
+.form__input-container input[type=submit] {
+  background-color: #FF941A;
+  color: #FFFFFF;
+  padding: 17px;
+  font-weight: 600;
+  border-radius: 40px;
+  margin: -8px;
+}
+.form__input-container .password {
+  position: relative;
+}
+.form__input-container .password svg {
+  position: absolute;
+  left: 89%;
+  top: 56%;
+}
+.form__input-container .password svg:hover {
+  fill: #FF941A;
+}
+.form__input-container .checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 53px;
+  font-size: 14px;
+}
+.form__input-container .checkbox #checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: inline-block;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FF941A;
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.form__input-container .checkbox #checkbox:checked {
+  background-color: #FF941A;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.3332 1L4.99984 8.33333L1.6665 5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.form__input-container label:nth-child(6) {
+  margin-bottom: 30px;
+}
+.form .footer-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 17px 24px;
+  border-radius: 20px;
+  background-color: rgba(7, 14, 56, 0.02);
+  font-size: 14px;
+}
+.form .footer-form a {
+  color: #FF941A;
+}
+
+@media (max-width: 768px) {
+  .form__label {
+    display: none;
+  }
+  .form__registration::before {
+    content: "";
+    display: inline-block;
+    width: 162px;
+    height: 30px;
+    position: absolute;
+    left: 4%;
+    top: 5%;
+    background-image: url(/Практика/form/images/logo-dark.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (max-width: 360px) {
+  .form__registration::before {
+    width: 129px;
+    height: 24px;
+    left: 5%;
+    top: 3%;
+  }
+  .form__registration h2 {
+    font-size: 24px;
+  }
+  .form__input-container {
+    gap: 17px;
+  }
+  .form__input-container label:nth-child(6) {
+    margin-bottom: 16px;
+  }
+  .form__input-container .checkbox {
+    gap: 10px;
+    margin-bottom: 125px;
+  }
+  .form .footer-form {
+    padding: 17px 12px;
+  }
+  .form__registration {
+    padding: 120px 20px 27px;
+  }
+}/*# sourceMappingURL=style.css.map */

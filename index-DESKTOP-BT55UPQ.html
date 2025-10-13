@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Практика/form/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form-container" >
+        <section class="form">
+            <article class="form__label">
+                <div class="form__label-logo logo">
+                    <img src="/Практика/form/images/logo.svg" alt="">
+                </div>
+                <article class="form__label-description">
+                    <h2>Возможности онлайн приложения</h2>
+                    <ul class="form__label-list">
+                        <li>Клиенты записываются 24/7 в удобное для вас время</li>
+                        <li>Создавайте, редактируйте, просматривайте записи</li>
+                        <li>Масштаб журнала записи 5, 10, 15 и 30 минут.</li>
+                        <li>Мотивируйте клиентов приходить чаще и тратить больше</li>
+                    </ul>
+                </article>
+            </article>
+            <article class="form__registration">
+                <form action="#" method="get" class="form__input">
+                    <h2>Регистрация</h2>
+                    <div class="form__input-container">
+                        <label for="name">Имя
+                            <input type="text" id="name" placeholder="Введите имя">
+                        </label>
+                        <label for="surname">Фамилия
+                            <input type="text" id="surname" placeholder="Введите фамилию">
+                        </label>
+                        <label for="phone">
+                            <input type="tel" id="phone" placeholder="+992 000 000 00-00">
+                        </label>
+                        <label for="email">Электронная почта
+                            <input type="email" id="email" placeholder="Введите электронную почту">
+                        </label>
+                        <label for="password">Пароль
+                            <input type="password" name="userPassword" id="password" placeholder="Введите пароль">
+                        </label>
+                        <label for="verification">Подтвердить пароль
+                            <input type="password" name="userPasswordVerification" id="verification" placeholder="Введите пароль">
+                        </label>
+                        <input type="submit" value="Зарегистрироваться">
+                        <label for="checkbox">
+                            <input type="checkbox" id="checkbox" required>
+                            <span>Нажимая «Зарегистрироваться», вы соглашаетесь на обработку персональных данных и условия сервиса</span>
+                        </label>
+                    </div>
+                </form>
+
+            </article>
+        </section>
+    </div>
+</body>
+</html>

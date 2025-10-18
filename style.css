@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Gilroy";
-  src: url("/Практика/fonts/transfonter.org-20251009-090052/Gilroy-Regular.woff2") format("woff2"), url("/Практика/fonts/transfonter.org-20251009-090052/Gilroy-Regular.woff") format("woff");
+  src: url("fonts/Gilroy/Gilroy-Regular.woff2") format("woff2"), url("fonts/Gilroy/Gilroy-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
